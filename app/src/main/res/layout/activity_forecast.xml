@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Forecast">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/mainlayout"
+        android:background="#FF018786"
+        >
+
+        <TextView
+            android:id="@+id/firstAnswer"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="20sp"
+            android:fontFamily="sans-serif-medium"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColor"
+            android:layout_marginHorizontal="70dp"
+            android:text="TextView" />
+        <TextView
+            android:id="@+id/firstFor"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="15sp"
+            android:fontFamily="sans-serif-medium"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColor"
+            android:layout_below="@+id/firstAnswer"
+            android:layout_marginHorizontal="70dp"
+            android:text="TextView" />
+        <TextView
+            android:id="@+id/secondAnswer"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="20sp"
+            android:fontFamily="sans-serif-medium"
+            android:textAlignment="center"
+            android:layout_below="@+id/firstFor"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColor"
+            android:layout_marginHorizontal="70dp"
+            android:text="TextView" />
+        <TextView
+            android:id="@+id/secondFor"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="15sp"
+            android:fontFamily="sans-serif-medium"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColor"
+            android:layout_below="@+id/secondAnswer"
+            android:layout_marginHorizontal="70dp"
+            android:text="TextView" />
+        <TextView
+            android:id="@+id/thirdAnswer"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="20sp"
+            android:fontFamily="sans-serif-medium"
+            android:textAlignment="center"
+            android:layout_below="@+id/secondFor"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColor"
+            android:layout_marginHorizontal="70dp"
+            android:text="TextView" />
+        <TextView
+            android:id="@+id/thirdFor"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="15sp"
+            android:fontFamily="sans-serif-medium"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColor"
+            android:layout_below="@+id/thirdAnswer"
+            android:layout_marginHorizontal="70dp"
+            android:text="TextView" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

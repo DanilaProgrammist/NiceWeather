@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF018786"
+    android:id="@+id/mainlayout"
+    tools:context=".Settings">
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Настройки"
+        android:textAlignment="center"
+        android:textColor="@color/textColor"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/themes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15sp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Выбор темы"
+        android:layout_below="@+id/logo"
+        android:textAlignment="center"
+        android:textColor="@color/textColor"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/themes"
+        android:layout_marginHorizontal="150sp"
+        android:layout_marginTop="40sp"
+        android:textColor="@color/textColor"
+        android:text="Тёмная тема" />
+    <TextView
+        android:id="@+id/data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Выбор параметров"
+        android:layout_below="@+id/switch1"
+        android:textAlignment="center"
+        android:textColor="@color/textColor"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <Switch
+        android:id="@+id/wind_speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/data"
+        android:layout_marginHorizontal="150sp"
+        android:layout_marginTop="20sp"
+        android:textColor="@color/textColor"
+        android:text="Скорость ветра" />
+    <Switch
+        android:id="@+id/humidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wind_speed"
+        android:layout_marginHorizontal="150sp"
+        android:layout_marginTop="20sp"
+        android:textColor="@color/textColor"
+        android:text="Влажность" />
+    <Switch
+        android:id="@+id/cloud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/humidity"
+        android:layout_marginHorizontal="150sp"
+        android:layout_marginTop="20sp"
+        android:textColor="@color/textColor"
+        android:text="Облачность" />
+    <Switch
+        android:id="@+id/feels_like"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cloud"
+        android:layout_marginHorizontal="150sp"
+        android:layout_marginTop="20sp"
+        android:textColor="@color/textColor"
+        android:text="Ощущается как" />
+    <Switch
+        android:id="@+id/country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/feels_like"
+        android:layout_marginHorizontal="150sp"
+        android:layout_marginTop="20sp"
+        android:textColor="@color/textColor"
+        android:text="Страна" />
+
+    <TextView
+        android:id="@+id/lang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15sp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Выбор языка"
+        android:layout_below="@+id/country"
+        android:textAlignment="center"
+        android:textColor="@color/textColor"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <Switch
+        android:id="@+id/england"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lang"
+        android:layout_marginHorizontal="150sp"
+        android:layout_marginTop="20sp"
+        android:textColor="@color/textColor"
+        android:text="Английский" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/england"
+        android:layout_marginHorizontal="150dp"
+        android:layout_marginTop="15sp"
+        android:text="Назад" />
+</RelativeLayout>
